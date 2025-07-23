@@ -12,8 +12,8 @@ Ultra-fast robot learning with Genesis physics simulation and Gymnasium RL envir
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/genesis-gymnasium-integration.git
-cd genesis-gymnasium-integration
+git clone https://github.com/jkoba0512/genesis_gym_test.git
+cd genesis_gym_test
 
 # 2. Install dependencies (using uv - recommended)
 uv sync
