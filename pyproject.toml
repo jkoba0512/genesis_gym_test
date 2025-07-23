@@ -1,0 +1,24 @@
+[project]
+name = "genesis-gym-test"
+version = "0.1.0"
+description = "Genesis-Gymnasium integration for reinforcement learning"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "genesis-world>=0.2.1",
+    "gymnasium>=0.29.0",
+    "numpy>=1.21.0",
+    "pymeshlab==2023.12",
+    "stable-baselines3>=2.6.0",
+    "torch>=2.0.0",
+    "trimesh>=4.7.1",
+]
+
+[project.optional-dependencies]
+genesis = ["genesis-world>=0.1.0"]
+
+[tool.uv]
+# Allow installation on newer Linux platforms
+constraint-dependencies = [
+    "pymeshlab<2025.7; platform_system == 'Linux'"
+]
